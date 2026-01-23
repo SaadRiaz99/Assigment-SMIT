@@ -1,0 +1,166 @@
+What is String Interning?
+
+String interning ka matlab yeh hota hai ke Python same string ko memory mein sirf aik hi dafa store karta hai.
+
+Agar do strings ka text bilkul same ho, to Python nayi memory banane ke bajaye pehle se maujood memory ko hi use karta hai.
+
+Automatic Interning
+
+Python khud se interning karta hai, jaise:
+
+Choti strings
+
+Simple words jo variable names jaise hote hain
+
+Wo strings jin mein koi space nahi hoti
+
+Is ka faida yeh hota hai ke:
+
+Memory kam use hoti hai
+
+Program zyada fast chalta hai
+
+Manual Interning
+
+Kuch strings aisi hoti hain jo automatically intern nahi hoti, jaise:
+
+Wo strings jo program chalne ke dauran banti hain
+
+Wo strings jin mein spaces hoti hain
+
+Aisi situation mein Python humein option deta hai ke hum string ko force karke intern kar dein taake wo shared memory mein save ho jaye.
+
+Checking Memory (Identity Comparison)
+
+Value check se yeh dekha jata hai ke text same hai ya nahi
+
+Identity check se yeh pata chalta hai ke memory same hai ya nahi
+
+Agar memory same ho to string interned hoti hai
+Agar memory different ho to string interned nahi hoti
+
+Task 10: String Literal Pool
+What is String Literal Pool?
+
+String literal pool aik special memory area hota hai jahan Python:
+
+String literals
+
+Interned strings
+
+ko store karta hai.
+
+Same String Literals Share Memory
+
+Agar same string literal bar bar likha jaye:
+
+Python usay sirf aik hi dafa save karta hai
+
+Sab variables usi aik memory ko use karte hain
+
+When Strings Are NOT in the Pool
+
+Strings pool mein nahi hoti jab:
+
+Wo input ya join ke zariye banayi jati hain
+
+Wo program ke run time par create hoti hain
+
+Un mein spaces ya special symbols hotay hain
+
+Is case mein same text hone ke bawajood memory alag ho sakti hai.
+
+Task 11: Interning vs String Pool
+Difference
+
+String pool ka matlab hai memory ki jagah
+String interning ka matlab hai string ko us memory mein daalna
+
+Easy Example
+
+String pool ko cupboard samajh lo
+Interning ka matlab hai cheez ko cupboard mein rakhna
+
+Task 12: Dynamic vs Static Strings
+Static Strings
+
+Code mein directly likhi hoti hain
+
+Program start hone se pehle hi known hoti hain
+
+Zyada tar automatically intern ho jati hain
+
+Dynamic Strings
+
+Program ke chalne ke dauran banti hain
+
+Input, join ya combine se create hoti hain
+
+By default intern nahi hoti
+
+Why Dynamic Strings Are Not Interned
+
+Is ki wajah yeh hai ke:
+
+Ye runtime par banti hain
+
+Python ko nahi pata hota ke ye dobara use hongi ya nahi
+
+Har string ko intern karna program ko slow kar deta hai
+
+Task 13: Advanced Type Casting
+Number Conversion
+
+Allowed conversions:
+
+Integer ko float mein badla ja sakta hai aur float ko integer mein
+
+Integer ya float ko string mein badla ja sakta hai
+
+String ko number mein sirf tab badla ja sakta hai jab wo numeric ho
+
+Error tab aata hai jab:
+
+String ke andar letters hon
+
+Boolean Conversion
+
+Zero value False hoti hai
+
+Empty list ya empty string False hoti hai
+
+Baqi sab values True hoti hain
+
+Collection Conversion
+
+Allowed conversions:
+
+List ko tuple banaya ja sakta hai
+
+Tuple ko set banaya ja sakta hai
+
+Set duplicate values ko khud remove kar deta hai
+
+Dictionary Creation
+
+Dictionary ban sakti hai:
+
+Key aur value pairs se
+
+Error hota hai jab.
+
+Pairs galat hon ya incomplete hon
+
+Complex Numbers
+
+Allowed conversions:
+
+Integer ko complex number mein badla ja sakta hai
+
+Float ko complex number mein badla ja sakta hai
+
+Not allowed conversions:
+
+Complex number ko integer mein badla nahi ja sakta
+
+Complex number ko float mein badla nahi ja sakta
