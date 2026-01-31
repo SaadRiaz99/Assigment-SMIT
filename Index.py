@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #  Q#1
 int_number:int = 8
 print("Integer Number is : " , int_number)
@@ -80,7 +79,6 @@ for item in My_list:
 
 
 
-=======
 #  Q#1
 int_number:int = 8
 print("Integer Number is : " , int_number)
@@ -162,4 +160,4 @@ for item in My_list:
 
 
 
->>>>>>> 4364d1be6034f7ea559d6c29b4f4720a66d37139
+

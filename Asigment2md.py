@@ -1,3 +1,4 @@
+# Q5
 para = "My Name is Saad Bin Riaz"
 
 split_res = para.split(" ")
@@ -57,14 +58,16 @@ print(name * 3)
 print(name * 0)
 
 
-print("-" * 30)
+print("-" * 20)
 print("WELCOME TO PYTHON")
-print("-" * 30)
+print("-" * 20)
 
 
 print("#" * 5)
-print("#" * 5)
-print("#" * 5)
+print("#" * 4)
+print("#" * 3)
+print("#" * 2)
+print("#" * 1)
 
 
 for i in range(1, 6):
